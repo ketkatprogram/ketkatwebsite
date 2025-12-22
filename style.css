@@ -1,10 +1,15 @@
+:root {
+    --bgc: #f9caca;
+    --borderc: #bfa3cc;
+}
+
 /*individual style*/
 @font-face {
     font-family: "gochihand"; /*a name to be used later*/
     src: url(font/GochiHand-Regular.ttf); /*URL to font*/
 }
 body {
-    background-color: #ffebcd;
+    background-color: var(--bgc);
 }
 
 h1, h2, h3 {
@@ -17,7 +22,7 @@ h1 {
 }
 
 h2 {
-    background: #FF8FB7;
+    background: var(--borderc); 
     border-top-left-radius: 15px;
     padding-left: 10px;
     font-size: 30px;
@@ -46,12 +51,15 @@ p {
     min-height: 100vh;
     gap: 1rem;
 }
+
+.header, .sidebar, .content, .footer {
+    padding-left: 5px;
+    border: 1rem ridge var(--borderc);
+    border-radius: 25px;
+}
     
 .header {
     grid-column: span 5 / span 5;
-    padding-left: 10px;
-    border: 1rem ridge pink;
-    border-radius: 25px;
     font-size: 20px;
 }
 
@@ -60,10 +68,6 @@ p {
     grid-row: span 3 / span 3;
     grid-column-start: 2;
     grid-row-start: 2;
-    
-    padding-left: 5px;
-    border: 1rem ridge #FF8FB7;
-    border-radius: 25px
 }
 
 .sidebar {
@@ -71,19 +75,12 @@ p {
     grid-column-start: 1;
     grid-row-start: 2;
     text-align: start;
-    
-    padding-left: 5px;
-    padding-top: -10px;
-    border: 1rem ridge #FF8FB7;
-    border-radius: 25px
 }
 
 .footer {
     grid-column: span 5 / span 5;
     grid-row-start: 5;
     text-align: center;
-    border: 1rem ridge #43334C;
-    border-radius: 25px
 }
 
 .quirks {
