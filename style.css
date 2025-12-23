@@ -1,18 +1,21 @@
 :root {
     --bgc: #f9caca;
     --borderc: #bfa3cc;
+    --fontc: black;
 }
 
-/*individual style*/
 @font-face {
     font-family: "gochihand"; /*a name to be used later*/
     src: url(font/GochiHand-Regular.ttf); /*URL to font*/
 }
+
+/*layout style*/
 body {
     background-color: var(--bgc);
+    color: var(--fontc)
 }
 
-h1, h2, h3 {
+h1, h2, h3, a {
     font-family: gochihand;
 }
 
