@@ -15,17 +15,23 @@ body {
   font-family: open sans;
 }
 
-h2, h1, a {
+h1 {
   text-align: center;
   font-family: gochihand;
-}
-
-h1 {
   font-size: 50px;
 }
 
 h2 {
   font-size: 40px;
+  font-family: gochihand;
+  background: var(--borderc); 
+  border-top-left-radius: 15px;
+  padding-left: 10px;
+}
+
+a {
+  font-size: 20px;
+  font-family: gochihand;
 }
 
 p {
@@ -42,16 +48,12 @@ p {
 .parent {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  justify-content: center;
-    
 }
 
 .header, .topbar, .content, .desc {
-  width: 95%;
   border: 1rem ridge var(--borderc);
   border-radius: 25px;
-    gap: 1rem
+  gap: 1rem
 }
 
 .topbar {
@@ -65,13 +67,12 @@ p {
 
 .content {
   margin-top: 10px;
-  justify-items: center;
-  height: 600px
+  height: 600px;
 }
 
 .desc {
   margin-top: 10px;
-  justify-items: center;
+  padding-left: 10px;
 }
 
 .imageboard {

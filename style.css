@@ -83,7 +83,10 @@ p {
 .footer {
     grid-column: span 5 / span 5;
     grid-row-start: 5;
+    
+    font-size: 25px;
     text-align: center;
+    font-family: gochihand;
 }
 
 .quirks {
